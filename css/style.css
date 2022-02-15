@@ -208,11 +208,12 @@ h5,h6,p{
 .Skill .heading p{
     color: var(--gray_text);
 }
-.Skill .skillAndExpe .row{
-    --bs-gutter-y:1.5rem;    
+.Skill .skillAndExpe .row {
+    width: 100%;
+    --bs-gutter-y:1.5rem;                
 }
 .Skill .left .row{
-    width: 85%;    
+    width: 85%;        
 }
 .Skill .skillAndExpe .left h3{
     margin-top: 12%;

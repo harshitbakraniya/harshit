@@ -51,6 +51,9 @@
     }
     .Skill .left .row{
         width: 100%;    
+    }    
+    .Skill .skillAndExpe .right{
+        margin-bottom: 2%;
     }
     .Projects .menu-bar ul{
         padding: 3%;
