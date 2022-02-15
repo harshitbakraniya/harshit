@@ -9,6 +9,7 @@
     --gray_text: #979797;
     --box_shadow_color: #C6C6C6;
     --font_family_2:'Poppins', sans-serif;
+    /* --border_radius:10px; */
 }
 
 * {
@@ -24,6 +25,7 @@
     font-weight: 500;
     color: var(--white);
     transition: .3s;
+    border-radius: var(--border_radius);
     padding: 10px 20px;
 }
 .btn:hover{
@@ -67,7 +69,7 @@ h5,h6,p{
 
 .header_wrapp .navbar .navbar-menu .nav-item a {
     font-weight: 500;
-    color: var(--white);
+    color: var(--white);    
 }
 
 .Banner {
@@ -90,7 +92,10 @@ h5,h6,p{
 .Banner .left .color-content {
     color: var(--secondary_color);
 }
-
+.Banner .left .btn-learn{
+    padding: 2% 10%;
+    font-size: 16px;
+}
 .Banner .left p {
     color: grey;
     margin: 4% 0;
@@ -178,7 +183,7 @@ h5,h6,p{
     padding: 6% 0;
     border: 0;
     box-shadow: 0 4px 30px 0 rgba(0,0,0,0.1);
-    border-radius: 30px;
+    border-radius: var(--border_radius);
 }
 .Service .cards .card img{
     width: 20%;
@@ -203,46 +208,31 @@ h5,h6,p{
 .Skill .heading p{
     color: var(--gray_text);
 }
-.Skill .main-content{
-    margin-top: 3%;
+.Skill .skillAndExpe .row{
+    --bs-gutter-y:1.5rem;    
 }
-.Skill .inner-content h3{
+.Skill .left .row{
+    width: 85%;    
+}
+.Skill .skillAndExpe .left h3{
+    margin-top: 12%;
     color: var(--white);
 }
-.Skill .main-content .left .row{
-    margin-top: 5%;    
-    width: 90%;
+.Skill .skillAndExpe .right h3{
+    margin-top: 10%;
+    color: var(--white);
 }
-.Skill .main-content .left .row .skill-div{
-    width: 27%;
-}
-.Skill .main-content .left .content{
-    padding: 12%;
-    margin-bottom: 15%;
-    text-align: center;
-    box-shadow: 0 2px 30px 0px rgba(0,0,0,0.1); 
-    border-radius: 20px;
+.Skill .in-card{
+    height: 8rem;
     background-color: var(--white);
-}
-.Skill .main-content .left .content h5{
-    font-size: 17px;
-    margin-top: 5%;
-}
-.Skill .main-content .right .content{
-    margin-top: 5%;
+    text-align: center; 
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border_radius);
 }
 
-.Skill .main-content .right .data{    
-    padding: 3%;
-    background-color: var(--white);
-    box-shadow: 0 2px 30px 0px rgba(0,0,0,0.1);
-    border-radius: 20px;
-    margin-top: 3%;
-}
-.Skill .main-content .right .data .in-content h5{   
-    font-weight: 600;
-    margin: 1% 0;
-}
 
 /* Projects section */
 .Projects .menu-bar ul{
@@ -268,43 +258,17 @@ h5,h6,p{
     background-color: var(--primary_color);
     border-radius: 10px;    
 }
-.Projects .project-content{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: repeat(3,450px);
-    gap: 15px;
+
+.Projects .boxes .left{
     margin-top: 3%;
 }
-.Projects .project-content img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    cursor: pointer;
+.Projects .boxes .right{    
+    margin-top: 3%;
 }
-.Projects .project-content .image:nth-child(1){
-    grid-row: 1/3;
-    grid-column: 1/3;
-}
-.Projects .overlayer{
-    width: 100%;
-    height: 100vh;
-    background-color: var(--black);
-    position: fixed;
-    top:0;
-    left: 0;
-    /* opacity: 0.8; */
-    display: none;
-    z-index: 12;
-    transition: .2s;
-}
-.Projects .overlayer i{
-    color: var(--white);
-    position: absolute;
-    top:3%;
-    right: 2%;
-    font-size: 2rem;
-    cursor: pointer;
+.Projects .boxes img{
+    width: 100%;    
+    object-fit: cover;    
+    border-radius: var(--border_radius);
 }
 .Client{
     background-color: var(--back);
@@ -320,7 +284,7 @@ h5,h6,p{
 }
 .Client .card{
     padding: 4%;
-    border-radius: 20px;
+    border-radius: var(--border_radius);
 }
 .Client .card .head{
     display: flex;
@@ -370,14 +334,14 @@ h5,h6,p{
     margin: 3% auto;
 }
 .Footer .content .insta,.fb,.linkedin{
-    height: 70px;
-    width: 70px;
+    height:55px;
+    width: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary_color);
-    border-radius: 50%;
+    background-color: var(--primary_color);    
     cursor: pointer;
+    border-radius: var(--border_radius);
 }
 .Footer .content img{
     width: 40%;
