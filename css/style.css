@@ -186,8 +186,7 @@ h5,h6,p{
     border-radius: var(--border_radius);        
 }
 .Service .cards .card img{
-    width: 20%;
-    height: auto;
+    width: 30%;    
     margin: 2% 0 5% 0;
 }
 .Service .cards .card .card-body p {
