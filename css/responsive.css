@@ -1,6 +1,119 @@
-@media (max-width: 575.98px) { }
+@media screen and (max-width: 575.98px) { 
+    .row{
+        margin: 0 !important;
+    }
+    .header_wrapp .navbar .navbar-toggler-icon{
+        color: white;
+    }
+    .header_wrapp .navbar{
+        padding: 5% 4%;
+    }
+    .navbar .navbar-toggler-icon{
+        height: 1em;
+        width: 1em;
+    }
+    .header_wrapp .navbar .navbar-menu{
+        text-align: center;
+    }
+    .header_wrapp .navbar .btn{
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+    .Banner .container .row{
+        flex-direction: column-reverse;
+    }
+    .Banner .container .row .left{
+        padding: 0 7% 6% 7%;
+    }
+    .Banner .container .row .right{
+        margin-top: 40%;
+    }
+    .Banner .left h1 {
+        font-size: 30px !important;        
+        line-height: 2rem !important;
+    }
+    .Banner .left p{
+        font-size: 13px;
+    }
+    .heading h2{
+        font-size: 25px;
+    }    
+    .heading p{
+        font-size: 13px;
+    }
+    .Service .cards .card{
+        margin-bottom: 20px;
+    }
+    .Service .cv-btn{
+        width: 45%;
+        margin: auto;
+    }
+    .Skill .main-content .left .row{        
+        width: 100%;
+        margin-top: 7% !important;
+    }
+    .Skill .main-content .right .content{        
+        margin-top: 7% !important;
+    }
+    .Skill .main-content .right .content .data{
+        padding: 4% 3%;
+    }
+    .Skill .main-content .left .row .skill-div{
+        width: 50%;        
+    }
+    .Skill .main-content .left .content{
+        padding: 15%;
+    }
+    .Projects .menu-bar ul{
+        padding: 3%;
+    }
+    .Projects .menu-bar ul li{
+        margin-right: 5%;
+    }
+    .Projects .project-content .image:nth-child(1){
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .Projects .project-content .image:nth-child(2){
+        grid-column: 1/4;
+    }
+    .Projects .project-content .image:nth-child(3){
+        grid-column: 1/4;
+    }
+    .Projects .project-content .image:nth-child(4){
+        grid-column: 1/4;
+    }
+    .Projects .project-content .image:nth-child(5){
+        grid-column: 1/4;
+    }
+    .Projects .project-content .image:nth-child(6){
+        grid-column: 1/4;
+    }
+    .Client .card {
+        margin-top: 5%;
+        margin-bottom: 6%;
+    }
+    .Footer .content h4{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+    .Footer .content .icons{
+        width: 40%;
+        margin: 5% auto;
+    }
+    .Footer .content .insta, .fb, .linkedin{
+        width: 40px;
+        height: 40px;
+    }
+    .Footer .footer-content{
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 767.98px) { 
+    
     .Banner .right .polygon-1 {
         width: 80%;    
     }
@@ -14,6 +127,10 @@
 
 
 @media screen and (max-width: 1500px) {
+    .Banner .left h1 {
+        font-size: 50px;        
+        line-height: 3rem;
+    }
     .Banner .right .polygon-1{
         width: 80%;    
     }

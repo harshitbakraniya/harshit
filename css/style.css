@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root {
     --primary_color: #3A86FF;
     --secondary_color: #FFD60A;
@@ -7,21 +8,23 @@
     --black: #272829;
     --gray_text: #979797;
     --box_shadow_color: #C6C6C6;
+    --font_family_2:'Poppins', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family_2);
 }
 
 .btn {
     background-color: var(--primary_color);
-    font-size: 0.9rem;
+    font-size: 13px;
     font-weight: 500;
     color: var(--white);
     transition: .3s;
+    padding: 10px 20px;
 }
 .btn:hover{
     box-shadow: 3px 4px 7px 0px rgba(0,0,0,0.3);
@@ -52,9 +55,6 @@ h5,h6,p{
         margin-top: 0;
     }
 }
-.header_wrapp .navbar .btn-contact {
-    padding: 0.7% 2%;
-}
 
 .header_wrapp .navbar .navbar-brand {
     font-weight: 600;
@@ -81,9 +81,10 @@ h5,h6,p{
 }
 
 .Banner .left h1 {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 800;
     color: var(--white);
+    line-height: 4rem;
 }
 
 .Banner .left .color-content {
@@ -92,12 +93,9 @@ h5,h6,p{
 
 .Banner .left p {
     color: grey;
+    margin: 4% 0;
 }
 
-.Banner .left .btn-learn {
-    padding: 2% 5%;
-    margin-top: 4%;
-}
 
 .Banner .right {
     display: flex;
@@ -170,6 +168,7 @@ h5,h6,p{
 .heading h2 .color{
     color: var(--secondary_color);
     margin-left: 8px;
+    font-weight: 600;
 }
 
 .Service .cards{
@@ -189,13 +188,9 @@ h5,h6,p{
 .Service .cards .card .card-body p {
     margin: 5% 0;
 }
-.Service .cards .card .card-body .btn{
-    padding: 1.7% 5%;
-}
 .Service .cv-btn{
     width: 20%;
-    margin-top: 6%;
-    padding: 1% 0;
+    margin-top: 6%;    
 }
 
 /* Skill section */
@@ -216,11 +211,14 @@ h5,h6,p{
 }
 .Skill .main-content .left .row{
     margin-top: 5%;    
+    width: 90%;
+}
+.Skill .main-content .left .row .skill-div{
+    width: 27%;
 }
 .Skill .main-content .left .content{
-    width: 150px;
-    padding: 11%;
-    margin-bottom: 9%;
+    padding: 12%;
+    margin-bottom: 15%;
     text-align: center;
     box-shadow: 0 2px 30px 0px rgba(0,0,0,0.1); 
     border-radius: 20px;
@@ -228,7 +226,7 @@ h5,h6,p{
 }
 .Skill .main-content .left .content h5{
     font-size: 17px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .Skill .main-content .right .content{
     margin-top: 5%;
@@ -342,6 +340,7 @@ h5,h6,p{
 }
 .Client .card .head .content a{
     color: var(--primary_color);
+    font-weight: 600;
 }
 .Client .card img{
     width: 60px;
