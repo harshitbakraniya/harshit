@@ -93,6 +93,9 @@
     .About .right .line{
         display: none;
     }
+    .About .left .right{
+        transform: translate(0,-65%);
+    }
     .About .right .content h3{
         font-size: 30px;
         margin-top: 5%;
