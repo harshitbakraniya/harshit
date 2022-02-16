@@ -81,6 +81,71 @@
     .Footer .footer-content{
         flex-direction: column;
     }
+    .About{
+        padding: 10% 0 10% 0;
+        height: 100%;
+    }
+    .About .left .outer-div{
+        width: 90%;
+        height: 20rem;
+        margin: 20% auto 0 auto;
+    }
+    .About .right .line{
+        display: none;
+    }
+    .About .right .content h3{
+        font-size: 30px;
+        margin-top: 5%;
+    }
+    .About .right .content p{
+        font-size: 13px;
+    }
+    .About .right .points img{
+        width: 14%;
+    }
+    .About .right .points{
+        margin-top: 0%;
+    }
+    .About .right .points .first,.second,.third{
+        color: var(--gray_text);
+        width: 90%;
+
+    }
+    .About .right .points p{
+        margin-top: 18%;
+        margin-left: 2%;
+        font-size: 13px;
+    }
+    .Contact{
+        padding: 10% 0;
+    }
+    .Contact .left .content h4{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 5%;
+    }
+    .Contact .left .content p{
+        font-size: 14px;
+        width:90%;
+    }
+    .Contact .left .content .contact-detail{
+        margin-bottom: 12%;
+        margin-left: 0%;
+    }
+    .Contact .left .content .contact-detail .email,.address{
+        margin-top: 7%;
+    }
+    .Contact .left .content .contact-detail i{
+        color:var(--secondary_color);
+        font-size: 22px;
+    }
+    .Contact .left .content .contact-detail p{
+        margin-left: 2.5%;
+        color: var(--white);
+    }
+    .Contact .right .form-div .form-label{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 767.98px) { 
