@@ -56,6 +56,9 @@
         width: 180px !important;
         height: 180px !important;
     }
+    .Banner .right .lower-box span,.upper-box span{
+        font-size: 10px;
+    }
     .heading h2{
         font-size: 25px;
     }    
