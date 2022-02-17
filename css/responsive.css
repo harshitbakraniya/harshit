@@ -36,6 +36,26 @@
     .Banner .left p{
         font-size: 13px;
     }
+    .Banner .right .first-layer{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .Banner .right .second-layer{
+        width: 280px !important;
+        height: 280px !important;
+    }
+    .Banner .right .third-layer{
+        width: 230px !important;
+        height: 230px !important;
+    }
+    .Banner .right .fourth-layer{
+        width:210px !important;
+        height: 210px !important;
+    }
+    .Banner .right .fifth-layer img{
+        width: 180px !important;
+        height: 180px !important;
+    }
     .heading h2{
         font-size: 25px;
     }    
@@ -170,14 +190,53 @@
         font-size: 50px;        
         line-height: 3rem;
     }
-    .Banner .right .polygon-1{
-        width: 80%;    
+    .Banner .right .first-layer{
+        width: 430px;
+        height: 430px;
+        margin: auto;
     }
-    .Banner .right .polygon-2{
-        width: 80%;
+    .Banner .right .second-layer{
+        width:400px;
+        height: 400px;
     }
-    .Banner .right .img-main {
-        top: -15%;
-        left: 15%;
+    .Banner .right .third-layer{
+        width: 340px;
+        height: 340px;
+    }
+    .Banner .right .fourth-layer{
+        width: 310px;
+        height: 310px;
+    }
+    .Banner .right .fifth-layer img{
+        width: 250px;
+        height: 250px;
+    }
+    .About .left .outer-div{
+        width: 70%;
+        height:26rem;
+        margin: 20% auto 0 auto;
+    }
+    .About .right .line{
+        margin-top: 7%;
+        margin-left: -3%;
+    }
+    .About .right .content h3{
+        font-size: 35px;
+        margin-top: 8%;
+    }
+    .About .right .points{
+        margin-top: 0;
+    }
+    .About .right .points p{
+        margin-top: 8%;        
+        font-size: 15px;
+    }
+    .Contact .left .content h4{
+        font-size: 35px;
+        font-weight: 800;
+        margin-top: 5%;
+    }
+    .Contact .left .content p{
+        font-size: 16px;
     }
 }

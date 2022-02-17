@@ -18,6 +18,9 @@
     box-sizing: border-box;
     font-family: var(--font-family_2);
 }
+html,body{
+    scroll-behavior: smooth;
+}
 
 .btn {
     background-color: var(--primary_color);
@@ -102,68 +105,67 @@ h5,h6,p{
 }
 
 
-.Banner .right {
+.Banner .right .first-layer,.second-layer,.third-layer,.fourth-layer,.fifth-layer{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.Banner .right .first-layer{
+    width: 607px;
+    height: 607px;
+    border: 3px solid var(--primary_color);
+    position: relative;    
+}
+.Banner .right .second-layer{
+    width:574px;
+    height: 574px;
+    border: 3px solid var(--primary_color);
     position: relative;
-    margin-top: 4%;
+}
+.Banner .right .third-layer{
+    width: 482px;
+    height: 482px;
+    border: 3px solid var(--secondary_color);    
+}
+.Banner .right .fourth-layer{
+    width: 449px;
+    height: 449px;
+    border: 3px solid var(--secondary_color);
+}
+.Banner .right .fifth-layer img{
+    width: 391px;
+    height: 391px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Banner .right .upper-box,.lower-box{
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    padding: 3% 4%;
+    border-radius: 20px;    
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.Banner .right .upper-box{    
+    top:0;
+    right: -5%;        
+}
+.Banner .right .lower-box{    
+    bottom:0;
+    left:-10%;    
+}
+.Banner .right .lower-box img,.upper-box img{
+    width: 40px;
+    height: 40px;
+}
+.Banner .right .lower-box span,.upper-box span{
+    font-weight: 600;
+    margin-left:4%;
+    color: var(--white);
 }
 
-.Banner .right .polygon-1 {
-    width: 90%;
-    position: relative;
-    left: 10%;
-    animation: rotation1 2s ease-in-out;
-    z-index: 1;
-}
-@keyframes rotation1 {
-    0%{
-        margin-left: 0%;
-    }
-    30%{
-        margin-left: -20%;
-    }
-    100%{
-        margin-left: 0%;
-    }
-}
-.Banner .right .polygon-2 {
-    width: 90%;
-    position: absolute;
-    left: 10%;
-    top: 0%;
-    animation: rotation2 2s ease-in-out;
-    z-index: 1;
-}
-@keyframes rotation2 {
-    0%{
-        margin-left: 0%;
-    }
-    30%{
-        margin-left: 20%;
-    }
-    100%{
-        margin-left: 0%;
-    }
-}
-.Banner .right .img-main {
-    width: 70%;
-    position: absolute;
-    left: 20%;
-    top: -10%;
-    z-index: 1;    
-    transform: scale(1);
-    animation: top_up 3s ease-in-out;
-}
-@keyframes top_up {
-    0%{
-        /* z-index: 0; */
-        transform: scale(0);
-    }
-    100%{
-        /* z-index: 1; */
-        transform: scale(1);
-    }
-}
+
 
 .heading h2{
     font-size: 30px;
