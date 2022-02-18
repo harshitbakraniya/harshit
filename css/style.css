@@ -45,6 +45,9 @@ li{
 h5,h6,p{
     margin-bottom: 0;
 }
+a{
+    text-decoration: none;
+}
 
 .header_wrapp .navbar {
     padding: 1.3% 4%;
@@ -165,8 +168,6 @@ h5,h6,p{
     color: var(--white);
 }
 
-
-
 .heading h2{
     font-size: 30px;
     font-weight: 600;
@@ -177,15 +178,22 @@ h5,h6,p{
     margin-left: 8px;
     font-weight: 600;
 }
-
+.Service{
+    background-color: #F7F8FC;
+}
 .Service .cards{
     margin-top: 4%;
 }
 .Service .cards .card{
     padding: 6% 0;
     border: 0;
-    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.1);
-    border-radius: var(--border_radius);        
+    /* box-shadow: 0 2px 15px 0 rgba(0,0,0,0.05); */
+    border-radius: var(--border_radius);    
+    transition: .4s;    
+}
+.Service .cards .card:hover{
+    box-shadow: 0 5px 30px 0 rgba(0,0,0,0.1);
+    transform: scale(1.03);
 }
 .Service .cards .card img{
     width: 30%;    
@@ -240,6 +248,9 @@ h5,h6,p{
 }
 
 /* Projects section */
+.Projects{
+    background-color: #F7F8FC;
+}
 .Projects .menu-bar ul{
     display: flex;
     padding: 0;
@@ -321,8 +332,17 @@ h5,h6,p{
     color: var(--gray_text);
     margin: 4% 0;
 }
+.Client .card .body a{
+    font-weight: 600;
+}
+.Client .card .body a i{
+    margin-top: 1px;
+}
 
 /* Footer section */
+.Footer{
+    background-color: #F7F8FC;
+}
 .Footer .content{
     border-bottom: 2px solid var(--black);
     text-align: center;
@@ -344,9 +364,17 @@ h5,h6,p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary_color);    
-    cursor: pointer;
-    border-radius: var(--border_radius);
+    /* background-color: var(--primary_color);     */
+    border: 3px solid var(--primary_color);
+    cursor: pointer;    
+    transition: .3s;
+}
+.Footer .content .icon i{
+    font-size: 20px;
+}
+.Footer .content .icon:hover{
+    background-color: var(--primary_color);
+    color: var(--white);
 }
 .Footer .content img{
     width: 40%;
