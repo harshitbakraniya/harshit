@@ -12,6 +12,10 @@
         height: 1em;
         width: 1em;
     }
+    .header_wrapp .navbar .btn-contact{
+        /* margin-top: 40%; */
+        margin-top: 4% !important;
+    }
     .header_wrapp .navbar .navbar-menu{
         text-align: center;
     }
@@ -112,7 +116,7 @@
         height: 100%;
     }
     .About .left .outer-div{
-        width: 90%;
+        width: 90% !important;
         height: 20rem;
         margin: 20% auto 0 auto;
     }
