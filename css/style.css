@@ -76,6 +76,20 @@ a{
 .header_wrapp .navbar .navbar-menu .nav-item a {
     font-weight: 500;
     color: var(--white);    
+    position: relative;
+    display: block;
+}
+.header_wrapp .navbar .navbar-menu .nav-item a.active::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%,0%);
+    display: block;
+    background-color: var(--primary_color);
 }
 
 .Banner {
@@ -99,7 +113,7 @@ a{
     color: var(--secondary_color);
 }
 .Banner .left .btn-learn{
-    padding: 2% 10%;
+    padding: 10px 30px;
     font-size: 16px;
 }
 .Banner .left p {
