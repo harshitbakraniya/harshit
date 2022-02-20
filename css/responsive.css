@@ -37,7 +37,7 @@
         padding: 0 7% 6% 7%;
     }
     .Banner .container .row .right{
-        margin-top: 40%;
+        margin-top: 30%;
     }
     .Banner .left h1 {
         font-size: 30px !important;        
@@ -49,6 +49,7 @@
     .Banner .right .first-layer{
         width: 300px !important;
         height: 300px !important;
+        margin: auto;
     }
     .Banner .right .second-layer{
         width: 280px !important;
