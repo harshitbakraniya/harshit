@@ -20,6 +20,7 @@
 }
 html,body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .btn {
@@ -52,16 +53,7 @@ a{
 .header_wrapp .navbar {
     padding: 1.3% 4%;
     background-color: var(--back);
-    animation: up_down 0.7s ease-in;
-    z-index: 11;
-}
-@keyframes up_down {
-    0%{
-        margin-top: -6%;
-    }
-    100%{
-        margin-top: 0;
-    }
+    z-index: 18;
 }
 
 .header_wrapp .navbar .navbar-brand {
@@ -138,7 +130,7 @@ a{
     width:574px;
     height: 574px;
     border: 3px solid var(--primary_color);
-    position: relative;
+    position: relative;    
 }
 .Banner .right .third-layer{
     width: 482px;
@@ -148,29 +140,56 @@ a{
 .Banner .right .fourth-layer{
     width: 449px;
     height: 449px;
-    border: 3px solid var(--secondary_color);
+    border: 3px solid var(--secondary_color);    
 }
 .Banner .right .fifth-layer img{
     width: 391px;
     height: 391px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover;    
 }
+
 .Banner .right .upper-box,.lower-box{
     background-color: rgba(255,255,255,0.2);
     position: absolute;
     padding: 3% 4%;
     border-radius: 20px;    
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);    
 }
+
 .Banner .right .upper-box{    
-    top:0;
-    right: -5%;        
+    top:-2%;
+    right: -3%;   
+    z-index: 10;     
+    animation: rotateupper 3s infinite ease-in-out;
+}
+
+.Banner .right .dot{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top:-5%;
+    right: 33%;
+    background-color: var(--primary_color);
+    border-radius: 50%;
+    z-index: 10;
 }
 .Banner .right .lower-box{    
     bottom:0;
-    left:-10%;    
+    left:-20%;    
+}
+.Banner .right .lower-box .dot{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top:-25%;
+    right: -5%;
+    background-color: var(--secondary_color);
+    border-radius: 50%;
+    z-index: -1;
 }
 .Banner .right .lower-box img,.upper-box img{
     width: 40px;
@@ -411,45 +430,26 @@ a{
     display: flex;
     align-items: center; 
 }
-
-.About .left .outer-div{
-    width: 62%;
-    height: 36rem;
-    background-color: var(--primary_color);
-    border-radius: 185px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 8;
+.About  .top{
+    height: 90%;
+    width: 80%;    
+    z-index: 0;     
+    border-left: 10px solid var(--secondary_color);
+    border-right: 10px solid var(--secondary_color);
+    background-color: rgba(255,255,255,0.1);    
+    margin-top: 10%;
 }
-.About .left img{
-    width: 94%;
-    height: 96%;
-    object-fit: cover;
-    border-radius: 180px;
+.About  .top img{
+    width: 70%;
     display: block;
+    margin: auto;
 }
-.About .left .left{
-    width: 2rem;
-    height: 4rem;
-    position: absolute;
-    top: 50%;
-    left: -3%;
-    transform: translate(0,-50%);
-    background-color: var(--secondary_color);
-    z-index: -1;
+.About .left{
+    z-index: 11;
+    position: relative;
 }
-.About .left .right{
-    width: 2rem;
-    height: 4rem;
-    position: absolute;
-    top: 50%;
-    right: -3%;
-    transform: translate(0,-90%);
-    background-color: var(--secondary_color);
-    z-index: -1;
-}
+
+
 .About .right{
     margin-top: 2%;
     position: relative;

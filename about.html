@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="./css/responsive.css">
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font awesome icons link -->
     <script src="https://kit.fontawesome.com/22904505b0.js" crossorigin="anonymous"></script>
 </head>
@@ -22,8 +24,8 @@
 <body>
 
     <!-- Navbar section -->
-    <header class="header_wrapp">
-        <nav class="navbar navbar-expand-lg fixed-top">
+    <header class="header_wrapp" data-aos="fade-up" data-aos-duration="1000">
+        <nav class="navbar navbar-expand-lg fixed-top" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">HP-GAJJAR</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,17 +50,13 @@
     <!-- About section -->
     <section class="About">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6 left">
-                    <div class="main-div">
-                        <div class="outer-div">
-                            <img src="./assets/photo-3.jpg" alt=""/>
-                            <div class="left"></div>
-                            <div class="right"></div>
-                        </div>                       
-                    </div>
+            <div class="row">                
+                <div class="col-12 col-md-6 col-lg-6 left" data-aos="fade-right" data-aos-duration="1000">                                    
+                    <div class="top">
+                        <img src="./assets/photo-3 2.png" alt="">
+                    </div>                
                 </div>
-                <div class="col-12 col-md-6 col-lg-6 right">
+                <div class="col-12 col-md-6 col-lg-6 right" data-aos="fade-left" data-aos-duration="1000">
                     <div class="line"></div>
                     <div class="content">
                         <h3>About Me</h3>
@@ -67,15 +65,15 @@
                     <div class="points">
                         <div class="first d-flex justify-content-between align-items-center">
                             <img src="./assets/Dots.svg" alt=""/>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa voluptatibus impedit. Excepturi, in fugiat iusto dicta molestias.</p>
+                            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa voluptatibus impedit. Excepturi, in fugiat iusto dicta molestias.</p>
                         </div>
                         <div class="second d-flex justify-content-between align-items-center">
                             <img src="./assets/Dots.svg" alt=""/>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa voluptatibus impedit. Excepturi, in fugiat iusto dicta molestias.</p>
+                            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa voluptatibus impedit. Excepturi, in fugiat iusto dicta molestias.</p>
                         </div>
                         <div class="third d-flex justify-content-between align-items-center">
                             <img src="./assets/Dots.svg" alt=""/>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa voluptatibus impedit. Excepturi, in fugiat iusto dicta molestias.</p>
+                            <p data-aos="fade-left" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa voluptatibus impedit. Excepturi, in fugiat iusto dicta molestias.</p>
                         </div>                        
                     </div>
                 </div>
@@ -90,9 +88,9 @@
                 <h4>Let's make something</h4>
                 <h4>amazing toghtether</h4>
                 <div class="icons">
-                    <a href="https://www.instagram.com/_h_p_gajjar/?hl=en"><div class="insta icon"><i class="fa-brands fa-instagram"></i></div></a>
-                    <a href="https://www.linkedin.com/in/harshit-bakraniya-27336b1bb/"><div class="linkedin icon"><i class="fa-brands fa-linkedin-in"></i></div></a>
-                    <a href=""><div class="fb icon"><i class="fa-brands fa-facebook-f"></i></div></a>
+                    <a href="https://www.instagram.com/_h_p_gajjar/?hl=en" data-aos="zoom-in" data-aos-duration="1000"><div class="insta icon"><i class="fa-brands fa-instagram"></i></div></a>
+                    <a href="https://www.linkedin.com/in/harshit-bakraniya-27336b1bb/" data-aos="zoom-in" data-aos-duration="1000"><div class="linkedin icon"><i class="fa-brands fa-linkedin-in"></i></div></a>
+                    <a href="" data-aos="zoom-in" data-aos-duration="1000"><div class="fb icon"><i class="fa-brands fa-facebook-f"></i></div></a>
                 </div>            
             </div>
             <div class="footer-content">
@@ -107,6 +105,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <!-- for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

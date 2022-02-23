@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="./css/responsive.css">
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font awesome icons link -->
     <script src="https://kit.fontawesome.com/22904505b0.js" crossorigin="anonymous"></script>
 </head>
@@ -22,7 +24,7 @@
 <body>
 
     <!-- Navbar section -->
-    <header class="header_wrapp">
+    <header class="header_wrapp" data-aos="fade-up" data-aos-duration="1000">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">HP-GAJJAR</a>
@@ -50,19 +52,20 @@
         
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 left my-5">
-                    <h1 class="color-content">Hei! I am</h1>
+                <div class="col-md-6 left my-5" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="color-content">Hey! I am</h1>
                     <h1>Harshit Bakraniya</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, odio libero nesciunt cupiditate autem, placeat distinctio quasi fuga iure temporibus quaerat! Doloremque inventore error ea necessitatibus a quod accusantium autem.</p>
                     <a href="#" class="btn text-center btn-learn">Learn More >></a>
                 </div>
-                <div class="col-md-6 right">
+                <div class="col-md-6 right" data-aos="flip-left" data-aos-duration="1000">
                     <div class="first-layer">                        
                         <div class="second-layer">
                             <div class="upper-box d-flex align-items-center justify-content-center">
                                 <img src="./assets/ui-ux-icon.svg"/>
                                 <span>Ui/UxDesign</span>
                             </div>
+                            <!-- <div class="dot"></div> -->
                             <div class="third-layer">                                
                                 <div class="fourth-layer">
                                     <div class="fifth-layer">
@@ -72,8 +75,9 @@
                             </div>
                             <div class="lower-box d-flex align-items-center justify-content-center">
                                 <img src="./assets/lower_icon.svg"/>
-                                <span>WebDevelopement</span>
+                                <span>WebDevelopement</span>                            
                             </div>
+                            <!-- <div class="dot"></div> -->
                         </div>
                     </div>
                 </div>
@@ -84,14 +88,14 @@
     <!-- Services section start -->
     <section class="Service">
         <div class="container">
-            <div class="row heading">
+            <div class="row heading" data-aos="fade-right" data-aos-duration="1000">
                 <h2>My awesome<span class="color">Services</span></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, voluptate eveniet! Hic doloremque sapiente facere vero ipsum dolor quos iure repudiandae, earum veritatis vitae atque cupiditate dicta aliquid id itaque.</p>
             </div>
         </div>
         <div class="container cards">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card text-center">                    
                         <div class="card-body">   
                           <img src="./assets/WebDevelopement.svg" alt=""/>                     
@@ -101,7 +105,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card text-center">                
                         <div class="card-body">
                           <img src="./assets/WebDesign.svg" alt=""/>
@@ -111,7 +115,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card text-center">
                         <div class="card-body">
                           <img src="./assets/SEOPRO.svg" alt=""/>
@@ -132,7 +136,7 @@
     <!-- Skill and experience section start -->
     <section class="Skill">
         <div class="container">
-            <div class="row heading">
+            <div class="row heading" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Skill &<span class="color">Experiences</span></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, voluptate eveniet! Hic doloremque sapiente facere vero ipsum dolor quos iure repudiandae, earum veritatis vitae atque cupiditate dicta aliquid id itaque.</p>
             </div>
@@ -140,37 +144,37 @@
                 <div class="col-md-6 col-lg-6 left">
                     <div class="row">
                         <h3>Skills</h3>
-                        <div class="col-6 col-md-4 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <img src="./assets/tabler_brand-html5.png"/>
                                 <h6>HTML</h6>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <img src="./assets/mdi_language-css3.png"/>
                                 <h6>CSS</h6>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <img src="./assets/fluent_javascript-24-regular.png"/>
                                 <h6>JavaScript</h6>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <img src="./assets/vscode-icons_file-type-reactjs.png"/>
                                 <h6>ReactJs</h6>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <img src="./assets/bx_bxl-nodejs.png"/>
                                 <h6>NodeJs</h6>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-4">
+                        <div class="col-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <img src="./assets/cib_mongodb.png"/>
                                 <h6>MongoDB</h6>
@@ -181,14 +185,14 @@
                 <div class="col-md-6 col-lg-6 right">                    
                     <div class="row">
                         <h3>Experiences</h3>
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <p>Present</p>
                                 <h5>Associate Software Engineer</h5>
                                 <p>Infostretch</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12"data-aos="zoom-in" data-aos-duration="1000">
                             <div class="in-card">
                                 <p>2020-2021</p>
                                 <h5>Web Developer</h5>
@@ -208,7 +212,7 @@
     <!-- Projects section -->
     <section class="Projects">
         <div class="container">
-            <div class="row heading">
+            <div class="row heading" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Latest<span class="color">Projects</span></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, voluptate eveniet! Hic doloremque sapiente facere vero ipsum dolor quos iure repudiandae, earum veritatis vitae atque cupiditate dicta aliquid id itaque.</p>
             </div>
@@ -224,22 +228,22 @@
             </div>            
             <div class="container boxes">
                 <div class="row">
-                    <div class="col-md-4 col-lg-4 left">
+                    <div class="col-md-4 col-lg-4 left" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="./assets/Login.png"/>
                     </div>
-                    <div class="col-md-4 col-lg-4 right">
+                    <div class="col-md-4 col-lg-4 right" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="./assets/Home&Message.png"/>
                     </div>
-                    <div class="col-md-4 col-lg-4 left">
+                    <div class="col-md-4 col-lg-4 left" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="./assets/Search&Reels.png"/>
                     </div>
-                    <div class="col-md-4 col-lg-4 right">
+                    <div class="col-md-4 col-lg-4 right" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="./assets/Activity&Account.png"/>
                     </div>
-                    <div class="col-md-4 col-lg-4 left">
+                    <div class="col-md-4 col-lg-4 left" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="./assets/Login.png"/>
                     </div>
-                    <div class="col-md-4 col-lg-4 right">
+                    <div class="col-md-4 col-lg-4 right" data-aos="zoom-in" data-aos-duration="1000">
                         <img src="./assets/Home&Message.png"/>
                     </div>
                 </div>
@@ -252,14 +256,14 @@
     <!-- Client's review section start -->
     <section class="Client">
         <div class="container">
-            <div class="row heading">
+            <div class="row heading" data-aos="fade-right" data-aos-duration="1000">
                 <h2>Client's<span class="color">Reviews</span></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, voluptate eveniet! Hic doloremque sapiente facere vero ipsum dolor quos iure repudiandae, earum veritatis vitae atque cupiditate dicta aliquid id itaque.</p>
             </div>
         </div>
         <div class="container cards">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <div class="card">
                         <div class="head">
                             <img src="./assets/photo-7.jpg" alt="client image 1"/>
@@ -274,7 +278,7 @@
                         </div>                        
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                     <div class="card">
                         <div class="head">
                             <img src="./assets/photo-9.jpg" alt="client image 2"/>
@@ -299,9 +303,9 @@
                 <h4>Let's make something</h4>
                 <h4>amazing toghtether</h4>
                 <div class="icons">
-                    <a href="https://www.instagram.com/_h_p_gajjar/?hl=en"><div class="insta icon"><i class="fa-brands fa-instagram"></i></div></a>
-                    <a href="https://www.linkedin.com/in/harshit-bakraniya-27336b1bb/"><div class="linkedin icon"><i class="fa-brands fa-linkedin-in"></i></div></a>
-                    <a href=""><div class="fb icon"><i class="fa-brands fa-facebook-f"></i></div></a>
+                    <a href="https://www.instagram.com/_h_p_gajjar/?hl=en" data-aos="zoom-in" data-aos-duration="1000"><div class="insta icon"><i class="fa-brands fa-instagram"></i></div></a>
+                    <a href="https://www.linkedin.com/in/harshit-bakraniya-27336b1bb/" data-aos="zoom-in" data-aos-duration="1000"><div class="linkedin icon"><i class="fa-brands fa-linkedin-in"></i></div></a>
+                    <a href="" data-aos="zoom-in" data-aos-duration="1000"><div class="fb icon"><i class="fa-brands fa-facebook-f" ></i></div></a>
                 </div>            
             </div>
             <div class="footer-content">
@@ -316,6 +320,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <!-- for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

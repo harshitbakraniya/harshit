@@ -67,6 +67,10 @@
         width: 180px !important;
         height: 180px !important;
     }
+    .Banner .right .lower-box{
+        left: -5%;
+        bottom: -5%;
+    }
     .Banner .right .lower-box span,.upper-box span{
         font-size: 10px;
     }
@@ -117,22 +121,18 @@
     }
     .Footer .footer-content{
         flex-direction: column;
-    }
+    }   
     .About{
-        padding: 10% 0 10% 0;
         height: 100%;
+        padding: 20% 0;
     }
-    .About .left .outer-div{
-        width: 90% !important;
-        height: 20rem;
-        margin: 20% auto 0 auto;
+    .About .left .top{
+        width: 100%;
+        margin:10% auto 0 auto;        
     }
     .About .right .line{
         display: none;
-    }
-    .About .left .right{
-        transform: translate(0,-67%);
-    }
+    }    
     .About .right .content h3{
         font-size: 30px;
         margin-top: 5%;
@@ -221,12 +221,7 @@
     .Banner .right .fifth-layer img{
         width: 250px;
         height: 250px;
-    }
-    .About .left .outer-div{
-        width: 70%;
-        height:26rem;
-        margin: 20% auto 0 auto;
-    }
+    }    
     .About .right .line{
         margin-top: 7%;
         margin-left: -3%;
