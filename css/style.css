@@ -458,11 +458,11 @@ a{
     position: relative;
 }
 .About .right .line{
-    width: 8rem;
+    width: 5rem;
     height: 2px;
     background-color: var(--gray_text);
     position: absolute;
-    left: -20%;
+    left: -10%;
     top:6%;
 }
 .About .right .content h3{
