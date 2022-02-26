@@ -378,6 +378,7 @@ a{
 /* Footer section */
 .Footer{
     background-color: #F7F8FC;
+    position: relative;
 }
 .Footer .content{
     border-bottom: 2px solid var(--black);
@@ -495,6 +496,7 @@ a{
     background-color: var(--back);   
     display: flex;
     align-items: center;
+    position: relative;
 }
 .Contact .left .content h4{
     font-size: 45px;
