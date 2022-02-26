@@ -359,7 +359,7 @@ a{
     font-size: 14px;
 }
 .Client .card .head .content a{
-    color: var(--white);
+    color: var(--primary_color);
     font-weight: 600;
 }
 .Client .card img{
@@ -374,7 +374,7 @@ a{
 }
 .Client .card .body a{
     font-weight: 600;
-    color: var(--white);
+    color: var(--primary_color);
 }
 .Client .card .body a i{
     margin-top: 1px;
