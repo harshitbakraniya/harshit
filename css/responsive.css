@@ -160,6 +160,7 @@
         font-size: 13px;
     }
     .Contact{
+        height: 100%;
         padding: 10% 0;
     }
     .Contact .left .content h4{
