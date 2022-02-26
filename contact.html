@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font awesome icons link -->
     <script src="https://kit.fontawesome.com/22904505b0.js" crossorigin="anonymous"></script>
+    <!-- script for sending mail -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -73,20 +75,20 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 right" data-aos="fade-left" data-aos-duration="1000">
                     <div class="form-div">
-                        <form>
+                        <form >
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Your Name</label>
-                              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                              
+                              <label for="yourname" class="form-label">Your Name</label>
+                              <input type="text" class="form-control" id="yourname" aria-describedby="emailHelp" name="textname">                              
                             </div>
                             <div class="mb-3">
                               <label for="exampleInputPassword1" class="form-label">Mail</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
+                              <input type="text" class="form-control" id="textemail" name="mail">
                             </div>      
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Message</label>
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                                <textarea class="form-control" aria-label="With textarea" id="message" name="content"></textarea>
                               </div>                 
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="btn btn-primary" onclick="sendEmail(event)">Send Message</button>
                           </form>
                     </div>
                 </div>
@@ -123,6 +125,26 @@
     <script>
       AOS.init();
     </script>
+
+    <script type="text/javascript">        
+        function sendEmail(e) {     
+            e.preventDefault();
+            let sendEmail = document.getElementById("textemail").value;   
+            let name = document.getElementById("yourname").value;
+            let msg = document.getElementById("message").value;
+            Email.send({            
+                Host: "smtp.gmail.com",
+                Username: "harshitbakraniya07@gmail.com",
+                Password: "znohgpstgrwfpkfs",
+                To: "harshitbakraniya07@gmail.com",
+                From: sendEmail,
+                Subject: "New Contact form Enquiry",
+                Body: "Name: " + name + "<br> Email: " + sendEmail + "<br> Message: " + msg,            
+            }).then(function (message) {
+                alert("Mail Sent Successfully");
+            });
+        }
+      </script>
 </body>
 
 </html>
