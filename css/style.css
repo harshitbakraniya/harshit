@@ -272,13 +272,14 @@ a{
 }
 .Skill .in-card{
     height: 8rem;
-    background-color: var(--white);
+    background-color: rgba(255,255,255,0.1);
     text-align: center; 
     display: flex;   
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: var(--border_radius);
+    color: var(--white);
 }
 .Skill .skillAndExpe .right p{
     color: var(--gray_text);
@@ -338,6 +339,8 @@ a{
 .Client .card{
     padding: 4%;
     border-radius: var(--border_radius);
+    background-color: rgba(255,255,255,0.1);
+    color: var(--white);
 }
 .Client .card .head{
     display: flex;
@@ -356,7 +359,7 @@ a{
     font-size: 14px;
 }
 .Client .card .head .content a{
-    color: var(--primary_color);
+    color: var(--white);
     font-weight: 600;
 }
 .Client .card img{
@@ -371,6 +374,7 @@ a{
 }
 .Client .card .body a{
     font-weight: 600;
+    color: var(--white);
 }
 .Client .card .body a i{
     margin-top: 1px;
@@ -526,15 +530,16 @@ a{
 }
 .Contact .right .form-div{
     padding: 5%;
-    background-color: var(--white);
+    background-color: rgba(255,255,255,0.1);
 }
 .Contact .right .form-div .form-control{
     padding: 2%;
     border: none;
-    background-color: #f1f1f1;
+    background-color:rgba(255,255,255,0.2);
     border-radius: 0;
+    color: var(--white);
 }
 .Contact .right .form-div .form-label{
-    color: var(--black);
+    color: var(--white);
     font-weight: 600;
 }
